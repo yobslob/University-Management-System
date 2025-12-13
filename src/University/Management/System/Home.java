@@ -1,5 +1,7 @@
 package University.Management.System;
 
+import University.Management.System.Menu.*;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -160,6 +162,9 @@ public class Home extends JFrame implements ActionListener {
                 } catch (IOException ex) {
                     ex.printStackTrace();
                 }
+                break;
+            case "Add Faculty":
+                new AddFaculty();
                 break;
             case "Exit App":
                 System.exit(0);

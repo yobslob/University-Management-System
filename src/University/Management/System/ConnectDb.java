@@ -6,8 +6,8 @@ import java.sql.Statement;
 
 public class ConnectDb {
     Connection connection;
-    Statement statement;
-    ConnectDb(){
+    public Statement statement;
+    public ConnectDb(){
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
             connection = DriverManager.getConnection("jdbc:mysql:///universitymanagement","root","Hr16p@1076");
