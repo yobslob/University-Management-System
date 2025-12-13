@@ -50,7 +50,7 @@ public class Login extends JFrame implements ActionListener {
         add(img);
 
         setSize(600,300);
-        setLocation(500,250);
+        setLocation(600,300);
         setLayout(null);
         setVisible(true);
     }
@@ -67,8 +67,8 @@ public class Login extends JFrame implements ActionListener {
                 ConnectDb cdb = new ConnectDb();
                 ResultSet set = cdb.statement.executeQuery(query);
                 if(set.next()){
-                    JOptionPane.showMessageDialog(null,"Login Successful.");
                     setVisible(false);
+                    new Home();
                 }else{
                     JOptionPane.showMessageDialog(null,"Invalid Username or Password");
                     passwordField1.setText("");
