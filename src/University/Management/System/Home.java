@@ -169,6 +169,12 @@ public class Home extends JFrame implements ActionListener {
             case "Add Student":
                 new AddStudent();
                 break;
+            case "View Faculty":
+                new ViewFaculty();
+                break;
+            case "View Student":
+                new ViewStudent();
+                break;
             case "Exit App":
                 System.exit(0);
         }
